@@ -10,7 +10,7 @@ Welcome to the official documentation for **HaptenDB**, a specialized curated da
 
 Singh, M. K., Srivastava, S., Raghava, G. P. S., & Varshney, G. C. (2006). 
 **HaptenDB: a comprehensive database of haptens, carrier proteins and anti-hapten antibodies.** *Bioinformatics*, 22(2), 253–255. 
-[https://doi.org/10.1093/bioinformatics/bti692](10.1007/s42000-023-00455-5)
+[https://doi.org/10.1093/bioinformatics/bti692](https://doi.org/10.1093/bioinformatics/bti692)
 
 ---
 
