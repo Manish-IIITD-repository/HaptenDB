@@ -1,71 +1,71 @@
-# ESLpred: SVM-based Method for Subcellular Localization of Eukaryotic Proteins
+# HaptenDB: A Comprehensive Database of Haptens, Carrier Proteins and Anti-Hapten Antibodies
 
-Welcome to the official documentation for **ESLpred**, a computational tool developed to predict the subcellular localization of eukaryotic proteins using Support Vector Machines (SVM). Accurate functional annotation of genomes relies heavily on knowing where a protein resides within a cell. ESLpred utilizes diverse protein features, including amino acid composition, dipeptide composition, and physico-chemical properties, to provide high-accuracy predictions.
+Welcome to the official documentation for **HaptenDB**, a specialized curated database designed to facilitate the development of successful immunochemical assays. HaptenDB provides a centralized resource for information on small molecules (haptens), the carrier proteins they are conjugated to, and the resulting anti-hapten antibodies.
 
-**Web Server:** [http://www.imtech.res.in/raghava/eslpred/](http://www.imtech.res.in/raghava/eslpred/)(https://webs.iiitd.edu.in/raghava/haptendb)
+**Web Server:** [http://crdd.osdd.net/raghava/haptendb/](http://crdd.osdd.net/raghava/haptendb/)(https://webs.iiitd.edu.in/raghava/haptendb)
 
 ---
 
 ## Citation
 
-Bhasin, M., & Raghava, G. P. S. (2004). 
-**ESLpred: SVM-based method for subcellular localization of eukaryotic proteins using dipeptide composition and PSI-BLAST.** *Nucleic Acids Research*, 32(Web Server issue), W414-W419. 
-[https://doi.org/10.1093/nar/gkh350](https://doi.org/10.1093/nar/gkh350)
+Singh, M. K., Srivastava, S., Raghava, G. P. S., & Varshney, G. C. (2006). 
+**HaptenDB: a comprehensive database of haptens, carrier proteins and anti-hapten antibodies.** *Bioinformatics*, 22(2), 253–255. 
+[https://doi.org/10.1093/bioinformatics/bti692](https://doi.org/10.1093/bioinformatics/bti692)
 
 ---
 
 ## About the Platform
 
-ESLpred was designed to improve upon existing subcellular localization methods that were limited to either simple amino acid composition or N-terminal characteristics. By implementing SVM and integrating multiple features into a hybrid module, ESLpred achieves superior performance in classifying proteins into four major subcellular locations:
-* **Cytoplasmic**
-* **Nuclear**
-* **Mitochondrial**
-* **Extracellular**
+Small molecules, such as haptens, are not immunogenic on their own but can elicit an antibody response when conjugated with a carrier molecule. The production of high-specificity anti-hapten antibodies depends on hapten design, selection of the carrier protein, and the conjugation method. HaptenDB compiles this scattered information from published literature and web resources into a structured, easily accessible format.
 
-### Key Features
-* **SVM-Light Implementation**: Utilizes the SVM-light package with a radial basis function (RBF) kernel for robust classification.
-* **PSI-BLAST Integration**: Incorporates similarity searches against a database of experimentally annotated proteins to refine predictions.
-* **Hybrid Approach**: Combines dipeptide composition, amino acid composition, and physico-chemical properties for maximum accuracy.
+
+
+### Database Statistics
+* **Haptens**: Detailed information for 1,087 unique haptens.
+* **Carrier Proteins**: Data for 25 different carrier proteins used in conjugation.
+* **Total Entries**: Over 2,021 comprehensive entries providing chemical and immunological details.
+
+---
+
+## Key Features
+
+### Search and Query Tools
+* **Simple Search**: Quick retrieval based on hapten name, category, or carrier protein.
+* **Advanced Search**: Complex multi-field querying using logical operators (AND/OR) to filter by specific chemical or experimental parameters.
+* **Browsing**: Users can browse the database by hapten category, carrier protein type, or alphabetical order.
+
+### Comprehensive Annotations
+* **Chemical Data**: Information on molecular weight, chemical formula, and structure for each hapten.
+* **Conjugation Details**: Details on the method of conjugation, site of attachment, and linkers used.
+* **Antibody Data**: Information on the specificity and affinity of the resulting anti-hapten antibodies.
 
 ---
 
 ## Technical Overview
 
-The method was developed and validated using a non-redundant dataset of 2,183 eukaryotic proteins (1,192 cytoplasmic, 464 nuclear, 391 extracellular, and 136 mitochondrial).
+HaptenDB is implemented using a robust architecture to ensure efficient data management and a user-friendly experience.
 
-| Feature / Module | Accuracy (%) |
-| :--- | :--- |
-| **Amino Acid Composition** | 71.3% |
-| **Dipeptide Composition** | 71.5% |
-| **Physico-chemical Properties** | 65.4% |
-| **PSI-BLAST** | 71.1% |
-| **Hybrid (SVM + PSI-BLAST)** | 88.0% |
-
----
-
-## Model Features
-
-* **Dipeptide Composition**: Captures local order information by representing a protein as a 400-dimensional vector.
-* **Physico-chemical Properties**: Includes features such as hydrophobicity, hydrophilicity, and polarity.
-* **Similarity Search**: Queries are searched against a curated dataset; if a significant hit is found, the localization of the hit is assigned to the query.
+* **Backend**: Managed with a MySQL database for organized data storage.
+* **Web Interface**: Developed using PHP and HTML to provide a responsive and easy-to-navigate platform.
+* **External Links**: Entries are cross-referenced with resources such as PubMed and the Kabat database.
 
 ---
 
 ## Applications
 
-* **Genome Annotation**: Automatically predicting the localization of newly sequenced eukaryotic proteins.
-* **Drug Target Discovery**: Identifying extracellular or nuclear proteins that may serve as potential therapeutic targets.
-* **Proteomics**: Assisting in the analysis of experimental data by providing cellular context.
+* **Assay Development**: Assisting in the design of specific haptens and selecting appropriate carrier proteins for antibody production.
+* **Environmental Monitoring**: Providing data on antibodies used to detect pesticides and herbicides.
+* **Research**: Serving as a high-quality resource for structure-activity relationship studies of hapten-antibody interactions.
 
 ---
 
 ## Contact & Authors
 
-**G. P. S. Raghava** Bioinformatics Centre, Institute of Microbial Technology, Sector 39A, Chandigarh, India.  
-**Email**: raghava@imtech.res.in
+**Grish C. Varshney** & **G.P.S. Raghava** Institute of Microbial Technology, Chandigarh, India.  
+**Email**: grish@imtech.res.in / raghava@imtech.res.in
 
 ---
 
 ## License
 
-This project is open-access and distributed under standard academic terms, permitting free use for research purposes provided the original work is properly cited.
+This resource is open-access and distributed under standard research terms, permitting use and distribution provided the original work is properly credited.
