@@ -63,8 +63,7 @@ HaptenDB is implemented using a robust architecture to ensure efficient data man
 
 ## Contact & Authors
 
-**Grish C. Varshney** & **G.P.S. Raghava** Institute of Microbial Technology, Chandigarh, India.  
-**Email**: grish@imtech.res.in / raghava@imtech.res.in
+**Prof. Gajendra P.S. Raghava** Department of Computational Biology, Indraprastha Institute of Information Technology (IIIT-Delhi), India. **Email**: raghava@iiitd.ac.in
 
 ---
 
